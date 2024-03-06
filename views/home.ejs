@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Posts</title>
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <center>Welcome to sneakey!!!</center>
     <div>
         <% posts.forEach(post => { %>
-            <h1>@<%= post.user %></h1>
-            <p><%= post.content %></p>
+            <h1 class="user">@<%= post.user %></h1>
+            <p class="content"><%= post.content %></p>
         <% }); %>
     </div>
 </body>
